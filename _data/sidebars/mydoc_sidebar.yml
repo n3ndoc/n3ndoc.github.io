@@ -1,0 +1,68 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+entries:
+- title: sidebar
+  product: WIZEYE
+  version: 1.5.4
+  folders:
+
+  - title: Operation
+    output: web, pdf
+
+    folderitems:
+    - title: Quick Start
+      url: /
+      type: homepage
+      output: web, pdf
+
+    - title: WIZEYE 시작
+      url: /mydoc_start/
+      output: web, pdf
+
+    - title: WIZEYE 접속 방법 및 로그인
+      url: /mydoc_login/
+      output: web, pdf
+
+    - title: 화면 구성 및 운영
+      url: /mydoc_layout_operation/
+      output: web, pdf
+
+    - title: 사용자 관리
+      url: /mydoc_user/
+      output: web, pdf
+
+    - title: VIEW 구성 및 운영
+      url: /mydoc_VIEW/
+      output: web, pdf
+
+    - title: CELL 운영
+      url: /mydoc_cell/
+      output: web, pdf
+
+    - title: Contents 생성
+      url: /mydoc_reference/
+      output: web, pdf
+
+    - title: 참조
+      url: /mydoc_reference/
+      output: web, pdf
+
+  - title: Installation
+    output: web, pdf
+    folderitems:
+
+    - title: 설치 전 준비
+      url: /mydoc_before_install/
+      output: web, pdf
+
+    - title: 설치
+      url: /mydoc_install/
+      output: web, pdf
+
+    - title: Collector 설치
+      url: /mydoc_collector/
+      output: web, pdf
+
+    - title: Uninstall
+      url: /mydoc_Uninstall/
+      output: web, pdf
