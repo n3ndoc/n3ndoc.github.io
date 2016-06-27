@@ -1,0 +1,171 @@
+
+
+
+
+ 
+
+ 
+mydoc_start:
+  title: "WIZEYE 시작"
+  url: /documentation-theme-jekyll/mydoc_start/
+  link: <a href="/documentation-theme-jekyll/mydoc_start/">WIZEYE 시작</a>
+
+
+ 
+mydoc_login:
+  title: "WIZEYE 접속 방법 및 로그인"
+  url: /documentation-theme-jekyll/mydoc_login/
+  link: <a href="/documentation-theme-jekyll/mydoc_login/">WIZEYE 접속 방법 및 로그인</a>
+
+
+ 
+mydoc_layout_operation:
+  title: "화면 구성 및 운영"
+  url: /documentation-theme-jekyll/mydoc_layout_operation/
+  link: <a href="/documentation-theme-jekyll/mydoc_layout_operation/">화면 구성 및 운영</a>
+
+
+ 
+mydoc_user:
+  title: "사용자 관리"
+  url: /documentation-theme-jekyll/mydoc_user/
+  link: <a href="/documentation-theme-jekyll/mydoc_user/">사용자 관리</a>
+
+
+ 
+mydoc_VIEW:
+  title: "VIEW 구성 및 운영"
+  url: /documentation-theme-jekyll/mydoc_VIEW/
+  link: <a href="/documentation-theme-jekyll/mydoc_VIEW/">VIEW 구성 및 운영</a>
+
+
+ 
+mydoc_cell:
+  title: "CELL 운영"
+  url: /documentation-theme-jekyll/mydoc_cell/
+  link: <a href="/documentation-theme-jekyll/mydoc_cell/">CELL 운영</a>
+
+
+ 
+mydoc_reference:
+  title: "Contents 생성"
+  url: /documentation-theme-jekyll/mydoc_reference/
+  link: <a href="/documentation-theme-jekyll/mydoc_reference/">Contents 생성</a>
+
+
+ 
+mydoc_reference:
+  title: "참조"
+  url: /documentation-theme-jekyll/mydoc_reference/
+  link: <a href="/documentation-theme-jekyll/mydoc_reference/">참조</a>
+
+
+
+
+ 
+mydoc_before_install:
+  title: "설치 전 준비"
+  url: /documentation-theme-jekyll/mydoc_before_install/
+  link: <a href="/documentation-theme-jekyll/mydoc_before_install/">설치 전 준비</a>
+
+
+ 
+mydoc_install:
+  title: "설치"
+  url: /documentation-theme-jekyll/mydoc_install/
+  link: <a href="/documentation-theme-jekyll/mydoc_install/">설치</a>
+
+
+ 
+mydoc_collector:
+  title: "Collector 설치"
+  url: /documentation-theme-jekyll/mydoc_collector/
+  link: <a href="/documentation-theme-jekyll/mydoc_collector/">Collector 설치</a>
+
+
+ 
+mydoc_Uninstall:
+  title: "Uninstall"
+  url: /documentation-theme-jekyll/mydoc_Uninstall/
+  link: <a href="/documentation-theme-jekyll/mydoc_Uninstall/">Uninstall</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+:
+  title: "WIZEYE1.5.4"
+  url: ""
+  link: "<a href='/'>WIZEYE1.5.4</a>"
+
+
+
+
+
+
+
+:
+  title: "INNOWATCH 3.0.4"
+  url: ""
+  link: "<a href='/'>INNOWATCH 3.0.4</a>"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+:
+  title: "WIZEYE1.5.4"
+  url: ""
+  link: "<a href='/'>WIZEYE1.5.4</a>"
+
+
+
+
+
+
+
+:
+  title: "INNOWATCH 3.0.4"
+  url: ""
+  link: "<a href='/'>INNOWATCH 3.0.4</a>"
+
+
+
+
+

@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="WIZEYE package는 Docker를 이용하여 설치를 진행한다. Docker는 리눅스 컨테이너(LXC) 기반의 가상화 엔진으로 응용프로그램의 배포를 자동화한다.">
+<meta name="keywords" content=" questions, troubleshooting, contact, support">
+<title>설치  | Jekyll theme for designers</title>
+<link rel="stylesheet" href="/documentation-theme-jekyll/css/syntax.css">
+
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/documentation-theme-jekyll/css/modern-business.css">
+<link rel="stylesheet" href="/documentation-theme-jekyll/css/lavish-bootstrap.css">
+<link rel="stylesheet" href="/documentation-theme-jekyll/css/customstyles.css">
+<link rel="stylesheet" href="/documentation-theme-jekyll/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/documentation-theme-jekyll/js/jquery.navgoco.min.js"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/2.0.0/anchor.min.js"></script>
+<script src="/documentation-theme-jekyll/js/toc.js"></script>
+<script src="/documentation-theme-jekyll/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/documentation-theme-jekyll/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link rel="alternate" type="application/rss+xml" title="" href="http://idratherbewriting.com/documentation-theme-jekyll/feed.xml">
+
+
+
+
+ 
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/documentation-theme-jekyll/">&nbsp;<span class="projectTitle"> N3N Documentation</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- entries without drop-downs appear here -->
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">WIZEYE<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li class="dropdownActive"><a href="/documentation-theme-jekyll/">WIZEYE1.5.4</a></li>
+                        
+                        
+                        
+                        <li><a href="http://doc.n3n.co.kr" target="_blank">Manual Download</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">INNOWATCH<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li class="dropdownActive"><a href="/documentation-theme-jekyll/">INNOWATCH 3.0.4</a></li>
+                        
+                        
+                        
+                        <li><a href="http://doc.n3n.co.kr" target="_blank">Manual Download</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                
+                
+			<!-- Send feedback function -->
+<script>
+function SendLinkByMail(href) {
+var subject= "Jekyll theme for designers feedback";
+var body = "I have some feedback about the 설치 page: ";
+body += window.location.href;
+body += "";
+var uri = "mailto:angel02@n3n.co.kr?subject=";
+uri += encodeURIComponent(subject);
+uri += "&body=";
+uri += encodeURIComponent(body);
+window.location.href = uri;
+}
+</script>
+
+<li><a href="javascript:(function()%7BSendLinkByMail()%3B%7D)()%3B" target="_blank"><i class="fa fa-envelope-o"></i> Feedback</a></li>
+
+		
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/documentation-theme-jekyll/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/documentation-theme-jekyll/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="설치">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+    <div class="col-lg-12">&nbsp;</div>
+    <!-- Content Row -->
+    <div class="row">
+        <!-- Sidebar Column -->
+        <div class="col-md-3">
+
+          
+
+
+
+
+
+
+
+
+
+
+
+
+<ul id="mysidebar" class="nav">
+    <li class="sidebarTitle">WIZEYE 1.5.4</li>
+    
+    
+    
+    <li>
+        <a href="#">Operation</a>
+        <ul>
+            
+            
+            
+            <li><a href="/documentation-theme-jekyll/">Quick Start</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="/documentation-theme-jekyll/mydoc_start/">WIZEYE 시작</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="/documentation-theme-jekyll/mydoc_login/">WIZEYE 접속 방법 및 로그인</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="/documentation-theme-jekyll/mydoc_layout_operation/">화면 구성 및 운영</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="/documentation-theme-jekyll/mydoc_user/">사용자 관리</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="/documentation-theme-jekyll/mydoc_VIEW/">VIEW 구성 및 운영</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="/documentation-theme-jekyll/mydoc_cell/">CELL 운영</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="/documentation-theme-jekyll/mydoc_reference/">Contents 생성</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="/documentation-theme-jekyll/mydoc_reference/">참조</a></li>
+            
+            
+            
+            
+        </ul>
+        
+        
+    
+    <li>
+        <a href="#">Installation</a>
+        <ul>
+            
+            
+            
+            <li><a href="/documentation-theme-jekyll/mydoc_before_install/">설치 전 준비</a></li>
+            
+            
+            
+            
+            
+            
+            <li class="active"><a href="/documentation-theme-jekyll/mydoc_install/">설치</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="/documentation-theme-jekyll/mydoc_collector/">Collector 설치</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="/documentation-theme-jekyll/mydoc_Uninstall/">Uninstall</a></li>
+            
+            
+            
+            
+        </ul>
+        
+        
+        
+        <!-- if you aren't using the accordion, uncomment this block:
+           <p class="external">
+               <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+           </p>
+           -->
+    </li>
+</ul>
+</div>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+    <!-- Content Column -->
+    <div class="col-md-9">
+        <div class="post-header">
+   <h1 class="post-title-main">설치</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+    <div class="summary">WIZEYE package는 Docker를 이용하여 설치를 진행한다. Docker는 리눅스 컨테이너(LXC) 기반의 가상화 엔진으로 응용프로그램의 배포를 자동화한다.</div>
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+  
+});
+</script>
+
+<div id="toc"></div>
+
+    
+
+    
+
+    
+
+    <a target="_blank" href="https://github.com/tomjohnson1492/documentation-theme-jekyll/edit/reviews/mydoc_install/" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
+    
+
+    
+
+  <h2 id="docker-">Docker 설치</h2>
+
+<h3 id="section">설치</h3>
+<p>WIZEYE package를 정상적으로 설치하기 위해서는 docker-engine-1.8.3 버전을 설치해야 한다.
+docker-engine-1.8.3 버전을설치하는 방법은 2가지가 있다.</p>
+
+<ul>
+  <li>
+    <p>Yum 설치</p>
+  </li>
+  <li>
+    <p>rpm 설치</p>
+  </li>
+</ul>
+
+<hr />
+
+<p>1.yum 설치 과정으로 repository를 추가하여 설치한다.</p>
+
+<p><code class="highlighter-rouge">cat &gt;/etc/yum.repos.d/docker.repo&lt;&lt;-EOF</code><br />
+<code class="highlighter-rouge">[dockerrepo]</code><br />
+<code class="highlighter-rouge">name=Docker Repository</code><br />
+<code class="highlighter-rouge">baseurl=https://yum.dockerproject.org/repo/main/centos/7</code><br />
+<code class="highlighter-rouge">enabled=1</code><br />
+<code class="highlighter-rouge">gpgcheck=1</code><br />
+<code class="highlighter-rouge">gpgkey=https://yum.dockerproject.org/gpg</code><br />
+<code class="highlighter-rouge">EOF</code></p>
+
+<ul>
+  <li>도커 저장소를 구성하고 정보를 입력한다.</li>
+</ul>
+
+<p><code class="highlighter-rouge">sudoyum install -y docker-engine-1.8.3</code></p>
+
+<ul>
+  <li>docker-engine-1.8.3를 설치한다.</li>
+</ul>
+
+<p>2.rpm을 다운로드 하여 설치한다.</p>
+
+<p>wget <a href="http://">https://yum.dockerproject.org/repo/main/centos/7/Packages/docker-engine-1.8.3-1.el7.centos.x86_64.rpm</a></p>
+
+<ul>
+  <li>docker-engine-1.8.3-1.el7.centos.x86_64.rpm을 다운한다.</li>
+</ul>
+
+<p><code class="highlighter-rouge">rpm –Uvh docker-engine-1.8.3-1.el7.centos.x86_64.rpm</code></p>
+
+<ul>
+  <li>rpm을 설치한다.</li>
+</ul>
+
+<h3 id="section-1">실행 및 확인</h3>
+
+<p>Docker를 실행하고 정상적으로 설치되었는지를 확인한다.</p>
+
+<div class="language-css highlighter-rouge"><pre class="highlight"><code><span class="nt">1</span><span class="o">.</span> <span class="nt">sudo</span> <span class="nt">service</span> <span class="nt">docker</span> <span class="nt">start</span>
+<span class="nt">2</span><span class="o">.</span> <span class="nt">sudo</span> <span class="nt">docker</span> <span class="nt">run</span> <span class="nt">hello-world</span>
+<span class="nt">3</span><span class="o">.</span> <span class="nt">dockerps</span> <span class="nt">-a</span>
+<span class="nt">4</span><span class="o">.</span> <span class="nt">docker-v</span>
+</code></pre>
+</div>
+
+<ol>
+  <li>도커를 실행한다.</li>
+  <li>테스트 이미지(hello-world)를 실행하여 제대로 설치되었는지를 확인하다.
+    <ul>
+      <li>테스트 이미지가 정상 작동하면 아래와 같이 출력된다.</li>
+    </ul>
+  </li>
+</ol>
+
+<p>[이미지]
+   * 테스트 이미지(hello-world) 과정을 실행하지 않으면 도커 실행이 이뤄지지 않을 수 있다.</p>
+
+<ol>
+  <li>
+    <p>도커가 정상적으로 작동하는 것을 확인한다.
+[이미지]</p>
+  </li>
+  <li>
+    <p>도커 버전을 확인한다. (1.8.3)</p>
+  </li>
+</ol>
+
+<h3 id="section-2">설정</h3>
+<p>Docker 서비스가 자동으로 실행할 수 있도록 설정한다.</p>
+
+<div class="language-css highlighter-rouge"><pre class="highlight"><code><span class="nt">1</span><span class="o">.</span> <span class="nt">sudo</span> <span class="nt">chkconfigdocker</span> <span class="nt">on</span>
+</code></pre>
+</div>
+
+<ol>
+  <li>시스템을 재 부팅 시에도 Docker 서비스가 자동 실행된다.</li>
+</ol>
+
+<h2 id="docker-compose">Docker-Compose</h2>
+
+<h3 id="section-3">실행</h3>
+
+<p>다음의 명령을 실행한다.</p>
+
+<div class="language-css highlighter-rouge"><pre class="highlight"><code><span class="nt">1</span><span class="o">.</span> <span class="nt">curl</span> <span class="nt">-L</span> <span class="nt">https</span><span class="o">://</span><span class="nt">github</span><span class="nc">.com</span><span class="o">/</span><span class="nt">docker</span><span class="o">/</span><span class="nt">compose</span><span class="o">/</span><span class="nt">releases</span><span class="o">/</span><span class="nt">download</span><span class="o">/</span><span class="nt">1</span><span class="nc">.4.2</span><span class="o">/</span><span class="nt">docker-compose-</span><span class="err">`</span><span class="nt">uname</span> <span class="nt">-s</span><span class="err">`</span><span class="nt">-</span><span class="err">`</span><span class="nt">uname</span> <span class="nt">-m</span><span class="err">`</span> <span class="o">&gt;</span> <span class="o">/</span><span class="nt">usr</span><span class="o">/</span><span class="nt">local</span><span class="o">/</span><span class="nt">bin</span><span class="o">/</span><span class="nt">docker-compose</span>  
+<span class="nt">2</span><span class="o">.</span> <span class="nt">chmod</span> <span class="o">+</span><span class="nt">x</span> <span class="o">/</span><span class="nt">usr</span><span class="o">/</span><span class="nt">local</span><span class="o">/</span><span class="nt">bin</span><span class="o">/</span><span class="nt">docker-compose</span>
+</code></pre>
+</div>
+
+<ol>
+  <li>지정한 경로(/usr/local/bin)에 docker-compose가 다운로드 된다.</li>
+  <li>docker-compose의 권한을 설정한다.</li>
+</ol>
+
+<h3 id="section-4">확인</h3>
+<p>docker-compose정보를 확인한다.</p>
+
+<div class="language-css highlighter-rouge"><pre class="highlight"><code><span class="nt">1</span><span class="o">.</span> <span class="nt">docker-compose</span> <span class="nt">-v</span>
+</code></pre>
+</div>
+
+<ol>
+  <li>docker-compose 버전을 확인한다. (1.4.2)</li>
+</ol>
+
+<h2 id="section-5">스크립트 다운로드 및 실행</h2>
+<p>스크립트를 다운로드 받아 실행한다.</p>
+
+<ol>
+  <li>
+    <p>아티팩토리에서스크립트를 다운로드 한다.<br />
+wget <a href="http://">http://artifactory.dev.n3n.io:8081/artifactory/ext-release-local/release-candidate/n3n-docker/1.0/configure_run_docker_compose.sh</a></p>
+  </li>
+  <li>
+    <p>권한을 설정한다.<br />
+<code class="highlighter-rouge">chmod 700 configure_run_docker_compose.sh</code></p>
+  </li>
+  <li>
+    <p>docker-compose를 실행한다.<br />
+<code class="highlighter-rouge">./configure_run_docker_compose.sh</code></p>
+  </li>
+</ol>
+
+<ul>
+  <li>발급받은 Docker Hub 계정 정보를 입력하면 설치가 진행된다.</li>
+</ul>
+
+<p>===========  Login to Docker Hub ======================<br />
+Please enter Docker Hub Username :<br />
+Please enter Docker Hub Password :<br />
+Logging in to Docker Hub Account ….. Login successful<br />
+========================================================<br />
+ * Docker Hub 계정 정보는 N3N에 문의 한다.</p>
+
+<h2 id="section-6">설치 확인</h2>
+<p>WIZEYE package가 설치되어 서비스가 정상적으로 실행되는지는 프로세스 및 웹 접속으로 확인한다.</p>
+
+<h3 id="section-7">프로세스 확인</h3>
+<p>프로세스 확인 방법은 다음과 같습니다.</p>
+
+<div class="language-css highlighter-rouge"><pre class="highlight"><code><span class="nt">1</span><span class="o">.</span> <span class="nt">dockerps</span> <span class="nt">-a</span>
+</code></pre>
+</div>
+
+<ol>
+  <li>WIZEYE container구성 및 서비스 상태를 확인한다.</li>
+</ol>
+
+<p>[이미지]</p>
+
+<ul>
+  <li>WIZEYE Container는 총 14개이며,ws(WIZEYEServer), wuf(WIZEYE UI Framework), wuf-builder, wuf-proxy, mongodb, mysql, redmine, Cassandra, zookeeper, Nginx, spark, service, neo4j, kafka으로 구성된다.</li>
+</ul>
+
+<h3 id="section-8">방화벽 설정</h3>
+
+<p>보안을 위해 WIZYE에서 사용하는 포트들에 대해 방화벽을 열어 주어야 한다.</p>
+
+<div class="language-css highlighter-rouge"><pre class="highlight"><code><span class="nt">1</span><span class="o">.</span> <span class="nt">systemctl</span> <span class="nt">start</span> <span class="nt">firewalld</span>  
+<span class="nt">2-a</span><span class="o">.</span> <span class="nt">firewall-cmd</span> <span class="nt">--zone</span><span class="o">=</span><span class="nt">public</span> <span class="nt">--permanent</span> <span class="nt">--add-port</span><span class="o">=</span><span class="nt">4243</span><span class="o">/</span><span class="nt">tcp</span><span class="o">(</span><span class="nt">4243</span> <span class="err">포트</span> <span class="err">오픈</span> <span class="err">예제</span><span class="o">)</span>  
+<span class="nt">2-b</span><span class="o">.</span> <span class="nt">firewall-cmd</span> <span class="nt">--zone</span><span class="o">=</span><span class="nt">public</span> <span class="nt">--permanent</span> <span class="nt">--add-port</span><span class="o">=</span><span class="nt">4990-4999</span><span class="o">/</span><span class="nt">tcp</span><span class="o">(</span><span class="nt">4990-4999</span> <span class="err">포트</span> <span class="err">오픈</span> <span class="err">예제</span><span class="o">)</span>  
+<span class="nt">3</span><span class="o">.</span> <span class="nt">firewall-cmd</span> <span class="nt">--zone</span><span class="o">=</span><span class="nt">public</span> <span class="nt">--permanent</span> <span class="nt">--list-ports</span>  
+</code></pre>
+</div>
+
+<ol>
+  <li>원활한 설치를 위해 일시적으로 내렸던 방화벽을 다시 올린다.</li>
+  <li>방화벽을 열어줄 포트를 추가한다.이때,특정 범위의 포트를 열어 주고자 하는 경우는 b와 같은 방법을 사용한다.</li>
+  <li>방화벽이 열린 포트 목록을 조회 한다.</li>
+</ol>
+
+<ul>
+  <li>WIZEYE 구축환경에 따라 사용하는 포트들은 다를 수 있으며,방화벽을 열어 줄 포트들도 다를 수 있다.</li>
+  <li>WIZEYE에서 기본적으로사용하는 포트는(27017, 1337, 1335, 8080, 1336, 9000, 80, 3306, 3000, 7474, 7000, 9042, 9160, 2181, 9092, 443, 4040, 6066, 7077, 8888, 8081, 8082, 4234, 7001-7006, 7012-7016)이 있다.</li>
+</ul>
+
+<h3 id="section-9">웹 접속 확인</h3>
+
+<ol>
+  <li>WIZEYEUI Framework 확인
+    <ul>
+      <li>http://xxx.xx.xx.xxx:8080으로 접속한다.</li>
+      <li>정상적으로 실행하고 있으면 아래의 웹으로 접속한다.</li>
+    </ul>
+  </li>
+</ol>
+
+<p>[이미지]</p>
+
+<ol>
+  <li>WIZEYEBuilder확인</li>
+</ol>
+
+<ul>
+  <li><a href="http://">http://xxx.xx.xx.xxx:9000</a>으로 접속한다.</li>
+  <li>정상적으로 실행하고 있으면 아래의 웹으로 접속한다.</li>
+</ul>
+
+<p>[이미지]</p>
+
+
+
+<div class="tags">
+    
+</div>
+
+    
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2016 company. All rights reserved. <br />
+<p>Page last updated:</span> March 20, 2016<br/> Site last generated: Jun 27, 2016 <br />
+<p><img src="/documentation-theme-jekyll/images/company_logo.png" alt="Company logo"/></p>
+                </div>
+            </div>
+</footer>
+
+    </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+    </div>
+    <script>
+    jQuery(function ($) {
+        $('.post-content').annotator()
+                .annotator('setupPlugins', {tokenUrl: 'http://example.com/api/token'})
+    });
+    </script>
+</body>
+
+</html>
